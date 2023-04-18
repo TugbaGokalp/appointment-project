@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <main className="text-center mt-2">
-      <h1 className="mt-5 mb-5 text-danger display-3">🏥TUGBA HOSPITAL</h1>
+      <h1 className="mt-5 mb-5 text-danger display-3">🍀CLOVER HOSPITAL</h1>
       
 
       <Doctors

@@ -6,7 +6,7 @@
 
 .doctor-img{
   transition: transform 0.5s;
-  max-height: 130px;
+  max-height: 180px;
   border-radius: 1px;
 }
 
