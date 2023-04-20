@@ -18,11 +18,11 @@ const AppointmentList = ({ appointments, setAppointments }) => {
     <Container className="p-2">
       <h3 className="display-6 mb-2">Appointment List</h3>
 
-      <div type="button" className="d-flex flex-column align-items-center"></div>
-      {!appointments.length && (
-        <img src="./img/appointment.jpg" width="50%" alt="appointment-img" />
-      )}
-      <div>
+      <div type="button" className="d-flex flex-column align-items-center">
+        {!appointments.length && (
+          <img src="./img/appointment.jpg" width="50%" alt="appointment-img" />
+        )}
+
         {appointments.map((item) => {
           const { id, patient, consulted, doctor, day } = item;
           return (

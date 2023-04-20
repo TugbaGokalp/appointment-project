@@ -17,6 +17,7 @@ const Home = () => {
         appointments={appointments}
         doctors={doctors}
         setAppointments={setAppointments}
+        setDoctors={setDoctors}
       />
 
       <AppointmentList appointments={appointments} setAppointments={setAppointments} />
