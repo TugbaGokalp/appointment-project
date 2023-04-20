@@ -6,7 +6,7 @@ const Doctors = ({ appointments, doctors, setAppointments }) => {
   const [show, setShow] = useState(false);
   const [selectedDrName, setSelectedDrName] = useState("");
 
-  const handleClose = () => setShow(false);
+  // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
 
   const handleClick = (drName) => {
@@ -22,19 +22,19 @@ const Doctors = ({ appointments, doctors, setAppointments }) => {
       <hr />
 
       <Row className="justify-content-center">
-        {doctors.map((doctors) => {
+        {doctors.map((dr) => {
           return (
-            <Col className="mt-3" key={doctors.id} xs={6} sm={4} md={3}>
+            <Col className="mt-3" key={dr.id} xs={6} sm={4} md={3}>
               <img
                 className="img-thumbnail doctor-img"
-                src={doctors.img}
-                alt={doctors.img}
+                src={dr.img}
+                alt={dr.name}
                 onClick={() => {
-                  handleClick(doctors.name);
+                  handleClick(dr.name);
                 }}
               />
-              <h5 className="mt-2">{doctors.name}</h5>
-              <h6>{doctors.dep}</h6>
+              <h5 className="mt-2">{dr.name}</h5>
+              <h6>{dr.dep}</h6>
             </Col>
           );
         })}
@@ -42,7 +42,7 @@ const Doctors = ({ appointments, doctors, setAppointments }) => {
 
       <AddModal
         show={show}
-        handleClose={handleClose}
+        handleClose={() => setShow(false)}
         drName={selectedDrName}
         appointments={appointments}
         setAppointments={setAppointments}
