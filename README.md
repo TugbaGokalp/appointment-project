@@ -1,6 +1,6 @@
 # Project: Appointment App (
 
-- Link : https://nba-legends-cards-project.netlify.app/
+- Link : https://appointment-project.netlify.app/
 
 ## Description
 
